@@ -267,6 +267,19 @@ footer{background:var(--ink);color:#8ea3c2;font-size:.82rem;border-top:1px solid
 .year-pics{grid-column:1/-1;margin-top:.4rem}
 .sub-title{font-size:1.6rem;font-weight:750;margin:1.8rem 0 .9rem;padding-top:.8rem;border-top:1px solid var(--rule)}
 .pics-small{max-width:420px}
+.y-head b{font-size:2.1rem;font-weight:750;line-height:1.05;margin-bottom:.35rem}
+.y-head span{display:block;font-size:1.02rem;line-height:1.45;color:var(--graphite)}
+.y-head .y-dates{display:block;font-style:normal;font-weight:650;font-size:1.15rem;color:var(--ink)}
+/* type scale: h1 hero > h2 section > sub-title > h3 entry > year > h4 */
+h2{font-size:clamp(2.1rem,4.6vw,2.5rem)}
+.sub-title{font-size:clamp(1.55rem,3.4vw,1.8rem)}
+h3{font-size:1.25rem}
+.entry h3{font-size:clamp(1.3rem,2.8vw,1.5rem)}
+.skills h3{font-size:1.1rem}
+.y-head b{font-size:1.35rem;font-weight:750;line-height:1.1;margin-bottom:.25rem}
+.y-head .y-dates{font-size:1rem;font-weight:650}
+.y-head span{font-size:.92rem}
+.gal-title{font-size:1.12rem}
 </style>
 </head>
 <body>
@@ -432,7 +445,7 @@ footer{background:var(--ink);color:#8ea3c2;font-size:.82rem;border-top:1px solid
       <p>The B.U.T. trains technicians who build and use measurement chains, from the sensor to the result with its uncertainty. Each year has lectures, a lot of practical work and projects. Here is what we study each year, based on the national programme.</p>
       <div class="years">
         <div class="year">
-          <div class="y-head"><b>Year 3</b><span>2026–2027, Instrumentation track, work-study</span></div>
+          <div class="y-head"><b>Year 3</b><span><em class="y-dates">2026–2027</em>Instrumentation track, work&#8209;study</span></div>
           <ul>
             <li><b>Semester 5:</b> advanced mathematics, industrial testing based on wave physics, metrology and quality, advanced, smart and connected instrumentation (Internet of Things, networked measurement, embedded systems).</li>
             <li><b>Semester 6:</b> metrology and quality applied to a whole set of instruments, advanced physics for measurements in harsh environments, team organisation and management.</li>
@@ -448,7 +461,7 @@ footer{background:var(--ink);color:#8ea3c2;font-size:.82rem;border-top:1px solid
           </div>
         </div>
         <div class="year">
-          <div class="y-head"><b>Year 2</b><span>2025–2026, Instrumentation track</span></div>
+          <div class="y-head"><b>Year 2</b><span><em class="y-dates">2025–2026</em>Instrumentation track</span></div>
           <ul>
             <li><b>Signals:</b> mathematics and signal processing, signal conditioning and instrument control.</li>
             <li><b>Physics:</b> wave optics, fluid mechanics and vacuum techniques, electromagnetism, vibrations and acoustics.</li>
@@ -463,7 +476,7 @@ footer{background:var(--ink);color:#8ea3c2;font-size:.82rem;border-top:1px solid
           </div>
         </div>
         <div class="year">
-          <div class="y-head"><b>Year 1</b><span>2024–2025, common core</span></div>
+          <div class="y-head"><b>Year 1</b><span><em class="y-dates">2024–2025</em>Common core</span></div>
           <ul>
             <li><b>Measurement:</b> metrology and sensors, processing measurement data, a first metrology study.</li>
             <li><b>Physics:</b> electrical systems, mechanics, optical systems, thermodynamics and heat engines, heat transfer.</li>
@@ -772,4 +785,3 @@ document.querySelectorAll('img.bg[data-from]').forEach(function(bg){
 </script>
 </body>
 </html>
-
